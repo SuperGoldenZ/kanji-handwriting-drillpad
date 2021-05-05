@@ -1,3 +1,6 @@
 [submodule "kanjivg"]
 	path = kanjivg
 	url = https://github.com/KanjiVG/kanjivg.git
+[submodule "OnsenUI-dist"]
+	path = OnsenUI-dist
+	url = https://github.com/OnsenUI/OnsenUI-dist.git
