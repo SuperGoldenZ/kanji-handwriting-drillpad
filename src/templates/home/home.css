@@ -1,0 +1,56 @@
+.template__home {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.template__bottom {
+    position: fixed;
+    bottom: 25%;
+    text-align: center;
+    width: 100%;
+}
+
+.kanji {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.kanji_box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.kanji_area
+{
+    position: fixed;
+    top: 175px;
+    left: 50px;
+    height: 210px;
+    width: 210px;
+}
+
+#sketch {
+    border: 10px solid blue;
+	height: 210px;
+    width: 210px;
+}
+
+#kanji_canvas
+{
+    height: 210px;
+    width: 210px;
+}
+
+#kanji_svg
+{
+    pointer-events : none;
+}
+
+
+#toggle_guide_button, #clear_button
+{
+    display: none;
+}
