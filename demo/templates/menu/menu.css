@@ -1,0 +1,21 @@
+.menu {
+    border: none;
+}
+
+.menu ons-list-item {
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+.menu ons-list-item .center {
+    background: none;
+    padding: 6px 0;
+}
+
+.menu ons-list-item .ons-icon {
+    width: 20px;
+    color: #BF0000;
+}

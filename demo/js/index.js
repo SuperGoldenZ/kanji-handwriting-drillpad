@@ -12,7 +12,7 @@ function initializeApp() {
 
 
     const navigator = document.querySelector('#navigator');
-    navigator.resetToPage('templates/home/n5.html');
+    navigator.resetToPage('templates/n5/index.html');
 
     //hideStrokeOrder();
     console.log("Loaded");

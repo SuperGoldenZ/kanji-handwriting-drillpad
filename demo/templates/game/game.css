@@ -1,0 +1,24 @@
+.spell_area {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    left: auto;
+    right: auto;
+}
+
+.spell {
+    width: 75px;
+    height: 25px;
+
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#kanji_area {
+    opacity: 0.6;
+}
