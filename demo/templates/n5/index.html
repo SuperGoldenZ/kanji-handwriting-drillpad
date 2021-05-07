@@ -9,91 +9,12 @@
         <div id="kanji_area" class="kanji_area">
             <canvas id="kanji_canvas" height="210" width="210"></canvas>
         </div>
-        <object id="kanji_svg" type="image/svg+xml" data="images/kanjivg/0706b.svg" class="kanji_area">
+        <object id="kanji_svg" type="image/svg+xml" data="images/kanji/0706b.svg" class="kanji_area">
         </object>
     </section>
+
     <div class="content" style="top: 75%;">
-        <ons-list>
-            <ons-list-item tappable onClick="make_kanji_canvas('一');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="one" checked></ons-radio>
-                </label>
-                <label for="one" class="center">
-                    One
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('二');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="two"></ons-radio>
-                </label>
-                <label for="two" class="center">
-                    Two
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('三');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="three"></ons-radio>
-                </label>
-                <label for="three" class="center">
-                    Three
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('四');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="four"></ons-radio>
-                </label>
-                <label for="four" class="center">
-                    Four
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('五');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="five"></ons-radio>
-                </label>
-                <label for="five" class="center">
-                    Five
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('六');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="six"></ons-radio>
-                </label>
-                <label for="six" class="center">
-                    Six
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('七');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="seven"></ons-radio>
-                </label>
-                <label for="seven" class="center">
-                    Seven
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('八');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="eight"></ons-radio>
-                </label>
-                <label for="eight" class="center">
-                    Eight
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('九');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="nine"></ons-radio>
-                </label>
-                <label for="nine" class="center">
-                    Nine
-                </label>
-            </ons-list-item>
-            <ons-list-item tappable onClick="make_kanji_canvas('十');$('#kanji_svg').show();">
-                <label class="left">
-                    <ons-radio name="kanji" input-id="ten"></ons-radio>
-                </label>
-                <label for="ten" class="center">
-                    Ten
-                </label>
-            </ons-list-item>
+        <ons-list id = "kanji_list">
         </ons-list>
     </div>
 </ons-page>

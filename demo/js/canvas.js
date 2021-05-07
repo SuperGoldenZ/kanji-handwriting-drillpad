@@ -130,7 +130,6 @@ var kanjiCanvas = {
         $(svgStrokes[this.strokeNum - 1]).attr("stroke", color);
     },
     drawBlankCanvas: function() {
-        console.log("drawing blank canvas");
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.context.fillStyle = "#FFFFFF";
         this.context.fillRect(1, 1, this.canvas.width - 2, this.canvas.height - 2);
@@ -169,8 +168,12 @@ var kanjiCanvas = {
         this.kanji = kanji;
 
         this.drawGridLines();
-        var kanjiCodeHex = kanji.charCodeAt(0).toString(16);
 
+        if (kanji == ' ') {
+            return;
+        }
+
+        var kanjiCodeHex = kanji.charCodeAt(0).toString(16);
         var imageFilename = 'images/kanji/0' + kanjiCodeHex + '.svg';
 
         $('#kanji_svg').attr('data', imageFilename);
@@ -179,7 +182,6 @@ var kanjiCanvas = {
         if (showHint) {
             setTimeout(fadeOutGuide, 1000);
         } else {
-            console.log("Not showing hint");
             setTimeout(function() {
                 fadeOutGuide(1);
             }, 100);
@@ -321,23 +323,14 @@ function make_kanji_canvas(kanji, showHint, width, height) {
     } else {
         kanjiCanvas.init(width, height);
         kanjiCanvas.makeKanjiCanvas(kanji, showHint);
-        if (kanji == '奏') {
-            $('#draw_kanji_label').text('Draw Your Daughter\'s Name');
-        } else if (kanji == '海') {
-            $('#draw_kanji_label').text('Draw Your Son\'s Name');
-        } else if (kanji == '薫') {
-            $('#draw_kanji_label').text('Draw Your Wife\'s Name');
-        } else if (kanji == '火') {
-            $('#draw_kanji_label').text('Draw Fire');
-        } else if (kanji == '楽') {
-            $('#draw_kanji_label').text('Draw Raku(ten)');
-        } else if (kanji == '天') {
-            $('#draw_kanji_label').text('Draw (Raku)ten');
-        } else if (kanji == '一') {
-            $('#draw_kanji_label').text('Draw kanji for one');
+
+        var englishHint = getEnglishHint(kanji);
+        if (englishHint != null) {
+            $("#draw_kanji_label").html("Draw kanji for " + englishHint);
         } else {
-            $('#draw_kanji_label').text('Draw undescribable kanji');
+            $("#draw_kanji_label").html("Select a kanji to practice from the list");
         }
+        
     }
 }
 
@@ -439,7 +432,6 @@ function KanjiStroke(num, points) {
 
     this.addPoint = function(point) {
         this.points.push(point);
-        //console.log(point);
     }
 }
 
