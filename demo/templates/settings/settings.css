@@ -1,0 +1,13 @@
+.template__settings section {
+    padding: 15px;
+}
+
+.volume__icon {
+    width: 40px;
+    text-align: center;
+    line-height: 31px;
+}
+
+.volume__slider {
+    width: 100%;
+}

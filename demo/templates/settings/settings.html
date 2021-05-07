@@ -1,0 +1,47 @@
+<ons-page class="template__settings">    
+    <section>
+        <h3>Sample Settings</h3>
+    </section>
+
+    <ons-list>
+        <ons-list-item modifier="longdivider" tappable>
+            Setting 1
+        </ons-list-item>
+
+        <ons-list-item modifier="longdivider">
+          <div class="center">
+            Setting 2
+          </div>
+
+          <div class="right">
+            <ons-switch></ons-switch>
+          </div>
+        </ons-list-item>
+
+        <ons-list-item modifier="longdivider">
+            <ons-row>
+                <ons-col>
+                    Setting 3
+                </ons-col>
+            </ons-row>
+            
+            <ons-row>
+                <ons-col 
+                    class="volume__icon"
+                    width="40px">
+                    <ons-icon icon="md-volume-down"></ons-icon>
+                </ons-col>
+
+                <ons-col>
+                    <ons-range class="volume__slider"></ons-range>
+                </ons-col>
+
+                <ons-col
+                    class="volume__icon"
+                    width="40px">
+                    <ons-icon icon="md-volume-up"></ons-icon>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+    </ons-list>
+</ons-page>
