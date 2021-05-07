@@ -173,9 +173,8 @@ var kanjiCanvas = {
         if (kanji == ' ') {
             return;
         }
-        
+
         var kanjiCodeHex = kanji.charCodeAt(0).toString(16);
-        console.log("Loading SVG for kanji: " + kanji + " " + kanjiCodeHex);
         var imageFilename = 'images/kanji/0' + kanjiCodeHex + '.svg';
 
         $('#kanji_svg').attr('data', imageFilename);
