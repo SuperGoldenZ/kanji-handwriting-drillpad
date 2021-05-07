@@ -130,7 +130,6 @@ var kanjiCanvas = {
         $(svgStrokes[this.strokeNum - 1]).attr("stroke", color);
     },
     drawBlankCanvas: function() {
-        console.log("drawing blank canvas");
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.context.fillStyle = "#FFFFFF";
         this.context.fillRect(1, 1, this.canvas.width - 2, this.canvas.height - 2);
@@ -183,7 +182,6 @@ var kanjiCanvas = {
         if (showHint) {
             setTimeout(fadeOutGuide, 1000);
         } else {
-            console.log("Not showing hint");
             setTimeout(function() {
                 fadeOutGuide(1);
             }, 100);
@@ -434,7 +432,6 @@ function KanjiStroke(num, points) {
 
     this.addPoint = function(point) {
         this.points.push(point);
-        //console.log(point);
     }
 }
 
