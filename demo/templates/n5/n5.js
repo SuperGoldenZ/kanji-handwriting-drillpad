@@ -27,7 +27,6 @@ function init_home_page() {
 
 function onKanjiList(data)
 {
-  console.log("get kanji list");
   kanjiData = data.split("\n");
 
   for (var i=4; i < kanjiData.length; i++) {
