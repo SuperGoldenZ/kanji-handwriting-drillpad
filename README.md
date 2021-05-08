@@ -17,6 +17,9 @@ The following open source projects were used to make Kanji Handwriting Drillpad.
 
 [KanjiVG](https://github.com/KanjiVG/kanjivg)
 [OnsenUI](https://github.com/OnsenUI)
+[jQuery](https://jquery.com)
+[Raphaël](https://dmitrybaranovskiy.github.io/raphael)
+[vivus](https://maxwellito.github.io/vivus)
 
 ## License
 

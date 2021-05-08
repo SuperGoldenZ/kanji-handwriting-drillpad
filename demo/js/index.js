@@ -54,3 +54,21 @@ document.addEventListener('show', function(event) {
         init_game_page();
     }
 });
+
+document.addEventListener('init', function(event) {  
+  var page = event.target;
+  if (page.matches('#kanjiPage')) {    
+    page.querySelector('ons-toolbar-button').onclick = function() {
+      ons.notification.alert(`Kanji Handwriting Drillpad<br/>
+Copyright 2021 Alexander Harry Golden<br/><br/>
+
+Developed using the following open source software:<br/>
+<a href = "https://jquery.com/" target="_new">jQuery</a><br/>
+<a href = "https://github.com/KanjiVG/kanjivg" target = "_new">KanjiVG</a><br/>
+<a href = "https://github.com/OnsenUI" target = "_new">OnsenUI</a><br/>
+<a href = "https://dmitrybaranovskiy.github.io/raphael/" target = "_new">Raphaël</a><br/>
+<a href = "https://maxwellito.github.io/vivus/" target = "_new">vivus</a><br/>
+`);
+    };
+  }
+});
