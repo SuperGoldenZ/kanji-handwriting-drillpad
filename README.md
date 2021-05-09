@@ -15,11 +15,16 @@ docker run -it --name kanji-game --rm --network=host \
 
 The following open source projects were used to make Kanji Handwriting Drillpad.
 
-[KanjiVG](https://github.com/KanjiVG/kanjivg)
-[OnsenUI](https://github.com/OnsenUI)
-[jQuery](https://jquery.com)
-[Raphaël](https://dmitrybaranovskiy.github.io/raphael)
-[vivus](https://maxwellito.github.io/vivus)
+Provided Under [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/)
+* [KanjiVG](https://github.com/KanjiVG/kanjivg)
+
+Provided Under [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* [OnsenUI](https://github.com/OnsenUI)
+
+Provided Under [The MIT License](https://opensource.org/licenses/MIT)
+* [jQuery](https://jquery.com)
+* [Raphaël](https://dmitrybaranovskiy.github.io/raphael)
+* [vivus](https://maxwellito.github.io/vivus)
 
 ## License
 
