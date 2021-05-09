@@ -24,8 +24,12 @@
 </head>
 
 <body>
-    <ons-navigator id="navigator">
-    </ons-navigator>
+    <ons-splitter var="splitter">
+        <ons-splitter-side page="templates/menu/menu.html" id="splitterMenu" side="left" width="220px" collapse>
+        </ons-splitter-side>
+        <ons-splitter-content page="templates/n5/index.html" id="splitterContent">
+        </ons-splitter-content>
+    </ons-splitter>
 </body>
 
 </html>
