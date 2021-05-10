@@ -1,7 +1,15 @@
 <ons-page id="kanjiPage" style="max-height: 700px;">
     <ons-toolbar class="toolbar">
-        <div class="left">Kanji Handwriting Drillpad - N5</div>
-        <div class="right"><ons-toolbar-button>About</ons-toolbar-button></div>
+        <div class="left">
+            <ons-toolbar-button onClick="toggleMenu()">
+                <ons-icon icon="md-menu">
+                </ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">Kanji Handwriting Drillpad</div>
+        <div class="right">
+            <ons-toolbar-button class="about">About</ons-toolbar-button>
+        </div>
     </ons-toolbar>
     <p id="draw_kanji_label" style="position: absolute; margin-left: 2%; top: 15%;">Draw Fire</p>
     <section>
@@ -11,9 +19,8 @@
         <object id="kanji_svg" type="image/svg+xml" data="images/kanji/0706b.svg" class="kanji_area">
         </object>
     </section>
-
     <div class="content" style="top: 75%;">
-        <ons-list id = "kanji_list">
+        <ons-list id="kanji_list">
         </ons-list>
     </div>
 </ons-page>
