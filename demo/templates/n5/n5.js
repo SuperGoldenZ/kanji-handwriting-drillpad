@@ -22,11 +22,16 @@ function init_home_page() {
        $('#kanji_canvas').on('kanjierror', onKanjiError);
     }
 
-    $.get("japanese-kanji-jlpt-n5.yml", onKanjiList);
+    getKanjiList("japanese-kanji-jlpt-n5.yml")
+}
+
+function getKanjiList(filename) {
+  $.get(filename, onKanjiList);
 }
 
 function onKanjiList(data)
 {
+  $("#kanji_list").empty();
   kanjiData = data.split("\n");
 
   for (var i=4; i < kanjiData.length; i++) {
